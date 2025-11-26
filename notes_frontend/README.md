@@ -1,54 +1,32 @@
-# Remotion video
+# Notes Manager (Remotion Frontend)
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.gif">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+This container hosts a single-page Notes Manager built with React and Remotion Studio. It runs as a Remotion composition for a live SPA-like preview.
 
-Welcome to your Remotion project!
+## Features
+- Create, edit, delete notes (title, content)
+- LocalStorage persistence (no backend)
+- Responsive, modern UI with Ocean Professional theme
+- Timestamps for created/updated
+- Runs on Remotion preview at port 3000
 
 ## Commands
 
-**Install Dependencies**
-
+Install dependencies
 ```console
 npm i
 ```
 
-**Start Preview**
-
+Start preview (Remotion Studio)
 ```console
 npm run dev
 ```
+The app is available at / (port 3000). Select the "NotesManager" composition if the sidebar is open.
 
-**Render video**
-
+(Optional) Render video (not necessary for this SPA usage)
 ```console
 npx remotion render
 ```
 
-**Upgrade Remotion**
-
-```console
-npx remotion upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+## Notes
+- No external backend or REMOTION_* env vars are required.
+- Data persists across reloads using localStorage.
